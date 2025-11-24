@@ -1,0 +1,550 @@
+{
+  "dimensions": [
+    {
+      "id": "strategie",
+      "name": "Stratégie",
+      "description": "Vision et alignement numérique de l'organisation",
+      "paliers": [
+        {
+          "level": 1,
+          "name": "Sensibilisation",
+          "criteria": [
+            {
+              "id": "strat_1_1",
+              "label": "Conscience de la transformation numérique",
+              "description": "L'organisation reconnaît l'importance du numérique pour son secteur"
+            },
+            {
+              "id": "strat_1_2",
+              "label": "Identification des opportunités numériques",
+              "description": "Identification basique des domaines où le numérique pourrait créer de la valeur"
+            },
+            {
+              "id": "strat_1_3",
+              "label": "Premiers projets pilotes",
+              "description": "Mise en place de quelques initiatives numériques sans planification globale"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Structuration",
+          "criteria": [
+            {
+              "id": "strat_2_1",
+              "label": "Stratégie numérique documentée",
+              "description": "Existence d'une stratégie numérique écrite et partagée"
+            },
+            {
+              "id": "strat_2_2",
+              "label": "Roadmap d'investissements numériques",
+              "description": "Plan d'investissements IT sur 2-3 ans avec priorités claires"
+            },
+            {
+              "id": "strat_2_3",
+              "label": "Alignement avec la stratégie métier",
+              "description": "Lien explicite entre stratégie numérique et objectifs métier"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Optimisation",
+          "criteria": [
+            {
+              "id": "strat_3_1",
+              "label": "Suivi des KPIs numériques",
+              "description": "Tableau de bord des indicateurs de performance numérique"
+            },
+            {
+              "id": "strat_3_2",
+              "label": "Ajustement agile de la stratégie",
+              "description": "Révision régulière et adaptation de la stratégie basée sur les résultats"
+            },
+            {
+              "id": "strat_3_3",
+              "label": "Intégration des tendances technologiques",
+              "description": "Veille technologique intégrée dans la planification stratégique"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Excellence",
+          "criteria": [
+            {
+              "id": "strat_4_1",
+              "label": "Stratégie numérique prédictive",
+              "description": "Anticipation des évolutions technologiques et de marché"
+            },
+            {
+              "id": "strat_4_2",
+              "label": "Innovation continue",
+              "description": "Culture d'expérimentation et d'innovation systématisée"
+            },
+            {
+              "id": "strat_4_3",
+              "label": "Écosystème numérique intégré",
+              "description": "Partenariats et alliances numériques pour accélérer la création de valeur"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "name": "Culture & Capital Humain",
+      "description": "Compétences numériques et engagement collaboratif",
+      "paliers": [
+        {
+          "level": 1,
+          "name": "Sensibilisation",
+          "criteria": [
+            {
+              "id": "cult_1_1",
+              "label": "Sensibilisation des collaborateurs au numérique",
+              "description": "Actions informelles pour accroître la conscience numérique"
+            },
+            {
+              "id": "cult_1_2",
+              "label": "Premiers besoins de formation identifiés",
+              "description": "Identification basique des lacunes en compétences numériques"
+            },
+            {
+              "id": "cult_1_3",
+              "label": "Retours collaborateurs sur le numérique",
+              "description": "Collecte informelle de feedback sur l'expérience numérique"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Structuration",
+          "criteria": [
+            {
+              "id": "cult_2_1",
+              "label": "Plan de formation numérique",
+              "description": "Programme de formation structuré aux outils et compétences numériques"
+            },
+            {
+              "id": "cult_2_2",
+              "label": "Rôles et responsabilités numériques définis",
+              "description": "Définition claire des rôles (CTO, CIO, responsables numériques)"
+            },
+            {
+              "id": "cult_2_3",
+              "label": "Budget de développement des compétences",
+              "description": "Allocation budgétaire dédiée à la formation numérique"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Optimisation",
+          "criteria": [
+            {
+              "id": "cult_3_1",
+              "label": "Certification et progression des compétences",
+              "description": "Parcours de certification et progression des collaborateurs"
+            },
+            {
+              "id": "cult_3_2",
+              "label": "Culture collaborative et transversale",
+              "description": "Pratiques de collaboration amplifiées par le numérique"
+            },
+            {
+              "id": "cult_3_3",
+              "label": "Mesure de la transformation culturelle",
+              "description": "Indicateurs de l'adoption numérique et de l'engagement"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Excellence",
+          "criteria": [
+            {
+              "id": "cult_4_1",
+              "label": "Talent numériques attractif",
+              "description": "Capacité à attirer et fidéliser les talents numériques"
+            },
+            {
+              "id": "cult_4_2",
+              "label": "Prise d'initiative et autonomie",
+              "description": "Culture d'entreprise favorisant l'initiative des collaborateurs"
+            },
+            {
+              "id": "cult_4_3",
+              "label": "Leadership numérique visionnaire",
+              "description": "Direction engagée et inspirante dans la transformation numérique"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "relation_client",
+      "name": "Relation Client",
+      "description": "Engagement client et expérience numérique",
+      "paliers": [
+        {
+          "level": 1,
+          "name": "Sensibilisation",
+          "criteria": [
+            {
+              "id": "rc_1_1",
+              "label": "Présence numérique basique",
+              "description": "Site web ou présence en ligne minimale"
+            },
+            {
+              "id": "rc_1_2",
+              "label": "Collecte de feedback clients",
+              "description": "Mécanisme informel pour recueillir des commentaires clients"
+            },
+            {
+              "id": "rc_1_3",
+              "label": "Premiers canaux de communication numériques",
+              "description": "Email ou réseaux sociaux utilisés pour la communication"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Structuration",
+          "criteria": [
+            {
+              "id": "rc_2_1",
+              "label": "Plateforme e-commerce ou services en ligne",
+              "description": "Capacité de transaction ou de service en ligne disponible"
+            },
+            {
+              "id": "rc_2_2",
+              "label": "Segmentation client basique",
+              "description": "Classification des clients pour des approches ciblées"
+            },
+            {
+              "id": "rc_2_3",
+              "label": "CRM initial en place",
+              "description": "Système de gestion des relations clients mis en place"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Optimisation",
+          "criteria": [
+            {
+              "id": "rc_3_1",
+              "label": "Expérience omnicanale",
+              "description": "Cohérence de l'expérience client sur tous les points de contact"
+            },
+            {
+              "id": "rc_3_2",
+              "label": "Personnalisation de l'expérience",
+              "description": "Adaptation de l'offre et de la communication par client"
+            },
+            {
+              "id": "rc_3_3",
+              "label": "Analytics clients avancées",
+              "description": "Analyse approfondie du comportement et des préférences clients"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Excellence",
+          "criteria": [
+            {
+              "id": "rc_4_1",
+              "label": "Expérience client prédictive et proactive",
+              "description": "Anticipation des besoins clients grâce à l'IA et aux données"
+            },
+            {
+              "id": "rc_4_2",
+              "label": "Écosystème de partenaires numériques",
+              "description": "Réseau d'intégrations et de partenaires pour enrichir l'expérience"
+            },
+            {
+              "id": "rc_4_3",
+              "label": "Satisfaction et fidélité clients optimales",
+              "description": "Indicateurs de satisfaction et rétention clients excellents"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "processus",
+      "name": "Processus",
+      "description": "Automatisation et optimisation des flux de travail",
+      "paliers": [
+        {
+          "level": 1,
+          "name": "Sensibilisation",
+          "criteria": [
+            {
+              "id": "proc_1_1",
+              "label": "Documentation des processus clés",
+              "description": "Identification et documentation basique des processus critiques"
+            },
+            {
+              "id": "proc_1_2",
+              "label": "Automatisations ponctuelles",
+              "description": "Quelques outils d'automatisation utilisés sans approche globale"
+            },
+            {
+              "id": "proc_1_3",
+              "label": "Amélioration processus informelle",
+              "description": "Suggestions d'amélioration ad hoc des collaborateurs"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Structuration",
+          "criteria": [
+            {
+              "id": "proc_2_1",
+              "label": "Cartographie et modélisation des processus",
+              "description": "Visualisation systématique des flux de processus"
+            },
+            {
+              "id": "proc_2_2",
+              "label": "Plateforme de workflow automation",
+              "description": "Solution centralisée pour l'automatisation des tâches répétitives"
+            },
+            {
+              "id": "proc_2_3",
+              "label": "KPIs de performance processus",
+              "description": "Métriques pour mesurer l'efficacité des processus"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Optimisation",
+          "criteria": [
+            {
+              "id": "proc_3_1",
+              "label": "Automatisation avancée et RPA",
+              "description": "Robotic Process Automation pour les flux complexes"
+            },
+            {
+              "id": "proc_3_2",
+              "label": "Amélioration continue systématisée",
+              "description": "Méthodologie de kaizen ou amélioration continue déployée"
+            },
+            {
+              "id": "proc_3_3",
+              "label": "Intégration inter-processus",
+              "description": "Coordination et automatisation des échanges entre processus"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Excellence",
+          "criteria": [
+            {
+              "id": "proc_4_1",
+              "label": "Processus intelligents et adaptatifs",
+              "description": "Processus utilisant l'IA pour s'adapter dynamiquement"
+            },
+            {
+              "id": "proc_4_2",
+              "label": "Zéro friction pour les clients",
+              "description": "Processus sans friction de bout en bout"
+            },
+            {
+              "id": "proc_4_3",
+              "label": "Innovation processus continue",
+              "description": "Culture d'expérimentation et d'innovation dans les processus"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "technologies",
+      "name": "Technologies",
+      "description": "Infrastructure IT et architecture numérique",
+      "paliers": [
+        {
+          "level": 1,
+          "name": "Sensibilisation",
+          "criteria": [
+            {
+              "id": "tech_1_1",
+              "label": "Infrastructure IT basique",
+              "description": "Serveurs on-premise ou solutions cloud minimales"
+            },
+            {
+              "id": "tech_1_2",
+              "label": "Outils de productivité standards",
+              "description": "Suite bureautique et email déployés"
+            },
+            {
+              "id": "tech_1_3",
+              "label": "Gestion IT informelle",
+              "description": "Support IT sans processus structuré"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Structuration",
+          "criteria": [
+            {
+              "id": "tech_2_1",
+              "label": "Architecture technologique définie",
+              "description": "Plan IT et architecture système documentés"
+            },
+            {
+              "id": "tech_2_2",
+              "label": "Migration vers le cloud",
+              "description": "Transition vers des solutions cloud (SaaS, IaaS, PaaS)"
+            },
+            {
+              "id": "tech_2_3",
+              "label": "Interopérabilité des systèmes",
+              "description": "Intégration basique entre les principales applications"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Optimisation",
+          "criteria": [
+            {
+              "id": "tech_3_1",
+              "label": "APIs et microservices",
+              "description": "Architecture basée sur les APIs et microservices"
+            },
+            {
+              "id": "tech_3_2",
+              "label": "Données centralisées et exploitables",
+              "description": "Data lake ou data warehouse implémenté"
+            },
+            {
+              "id": "tech_3_3",
+              "label": "DevOps et déploiement continu",
+              "description": "Processus CI/CD pour les déploiements rapides et sûrs"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Excellence",
+          "criteria": [
+            {
+              "id": "tech_4_1",
+              "label": "Architecture cloud-native",
+              "description": "Architecture scalable et résiliente en cloud"
+            },
+            {
+              "id": "tech_4_2",
+              "label": "IA et Machine Learning embarqués",
+              "description": "Solutions IA intégrées dans les processus et produits"
+            },
+            {
+              "id": "tech_4_3",
+              "label": "Plateforme de données avancée",
+              "description": "Plateforme data unifiée pour l'analytics et l'IA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "securite",
+      "name": "Sécurité",
+      "description": "Protection des données et conformité",
+      "paliers": [
+        {
+          "level": 1,
+          "name": "Sensibilisation",
+          "criteria": [
+            {
+              "id": "sec_1_1",
+              "label": "Sensibilisation aux risques de sécurité",
+              "description": "Conscience basique des menaces de sécurité informatique"
+            },
+            {
+              "id": "sec_1_2",
+              "label": "Antivirus et protection basique",
+              "description": "Solutions antivirus sur les postes de travail"
+            },
+            {
+              "id": "sec_1_3",
+              "label": "Sauvegarde des données",
+              "description": "Processus de sauvegarde en place (régularité et test limités)"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Structuration",
+          "criteria": [
+            {
+              "id": "sec_2_1",
+              "label": "Politique de sécurité documentée",
+              "description": "Politique de sécurité informatique écrite et diffusée"
+            },
+            {
+              "id": "sec_2_2",
+              "label": "Gestion des accès et identités",
+              "description": "Contrôle d'accès basé sur les rôles et authentification"
+            },
+            {
+              "id": "sec_2_3",
+              "label": "Conformité réglementaire initiale",
+              "description": "Respect de base des obligations légales (RGPD, etc.)"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Optimisation",
+          "criteria": [
+            {
+              "id": "sec_3_1",
+              "label": "Chiffrement des données sensibles",
+              "description": "Chiffrement en transit et au repos pour les données critiques"
+            },
+            {
+              "id": "sec_3_2",
+              "label": "Monitoring et audit de sécurité",
+              "description": "Surveillance continue des événements de sécurité et audits réguliers"
+            },
+            {
+              "id": "sec_3_3",
+              "label": "Plan de continuité et de récupération",
+              "description": "PCA/PRA documenté et testé régulièrement"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Excellence",
+          "criteria": [
+            {
+              "id": "sec_4_1",
+              "label": "Sécurité par conception",
+              "description": "Intégration de la sécurité dans tous les processus de développement"
+            },
+            {
+              "id": "sec_4_2",
+              "label": "Zéro confiance et segmentation réseau",
+              "description": "Architecture de sécurité basée sur le modèle zéro confiance"
+            },
+            {
+              "id": "sec_4_3",
+              "label": "Intelligence menaces et résilience",
+              "description": "Équipe dédiée et stratégie avancée de défense"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
