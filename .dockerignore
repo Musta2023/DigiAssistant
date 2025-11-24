@@ -1,0 +1,5 @@
+node_modules
+**/node_modules
+npm-debug.log
+pnpm-lock.yaml # only include if you want, usually you do
+.DS_Store
