@@ -277,7 +277,7 @@ export default function Home() {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-6 sm:p-12 text-center mb-20">
+      <div className="bg-gradient-to-r from-slate-800 to-slate-700 rounded-2xl p-6 sm:p-12 text-center mb-20">
         <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
           Ready to Assess Your Digital Maturity?
         </h3>
