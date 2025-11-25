@@ -79,7 +79,7 @@ export default function Home() {
   ]
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 px-4">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
@@ -152,7 +152,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 items-stretch">
             <div className="flex flex-col border-2 border-blue-500 rounded-lg p-6 bg-white shadow-sm hover:shadow-md transition">
               <div>
-                <div className="text-5xl mb-3">🎯</div>
+                <div className="text-4xl sm:text-5xl mb-3">🎯</div>
                 <h4 className="text-xl font-bold text-slate-900 mb-3">Adaptive Conversational</h4>
                 <ul className="space-y-2 text-slate-700 mb-6">
                   <li className="flex gap-2 items-start">
@@ -187,7 +187,7 @@ export default function Home() {
 
             <div className="flex flex-col border border-slate-200 rounded-lg p-6 bg-white shadow-sm hover:shadow-md transition">
               <div>
-                <div className="text-5xl mb-3">📋</div>
+                <div className="text-4xl sm:text-5xl mb-3">📋</div>
                 <h4 className="text-xl font-bold text-slate-900 mb-3">Traditional Assessment</h4>
                 <ul className="space-y-2 text-slate-700 mb-6">
                   <li className="flex gap-2 items-start">
@@ -269,7 +269,7 @@ export default function Home() {
         <div className="grid md:grid-cols-4 gap-4">
           {profiles.map((profile, idx) => (
             <Card key={profile.name} className="p-6 border-slate-200 text-center hover:shadow-md transition-all">
-              <div className="text-5xl mb-4">{profile.icon}</div>
+              <div className="text-4xl sm:text-5xl mb-4">👑</div>
               <h4 className="font-bold text-slate-900 text-lg">{profile.name}</h4>
               <div className="text-sm text-blue-600 font-semibold my-2">{profile.range}</div>
               <p className="text-sm text-slate-600">{profile.description}</p>
