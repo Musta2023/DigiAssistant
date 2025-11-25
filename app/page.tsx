@@ -97,12 +97,12 @@ export default function Home() {
             </div>
             {/* ⭐️ END LOGO INTEGRATION ⭐️ */}
 
-            <h1 className="font-bold text-xl text-slate-900">DigiAssistant Pro</h1>
+            <h1 className="font-bold text-lg sm:text-xl text-slate-900">DigiAssistant Pro</h1>
           </div>
           <div className="flex items-center gap-4">
-            <Badge variant="outline">v2.0 - Adaptive</Badge>
+            <Badge variant="outline" className="hidden sm:block">v2.0 - Adaptive</Badge>
             <Link href="/start?type=adaptive">
-              <Button size="sm"> Adaptive Assessment</Button>
+              <Button size="sm" className="w-full text-xs sm:text-base"> Adaptive Assessment</Button>
             </Link>
 
           </div>
