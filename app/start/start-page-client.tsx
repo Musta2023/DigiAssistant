@@ -179,15 +179,14 @@ export default function StartPageClient() {
                 type="button"
                 variant="outline"
                 onClick={() => handleNavigation('/')}
-                className="flex-1"
+                className="flex-1 py-2 text-xs sm:text-sm font-medium border-gray-300 hover:bg-gray-100"
               >
                 Cancel
               </Button>
               <Button
                 type="submit"
                 disabled={!isFormValid || isSubmitting}
-                className="flex-1"
-                size="lg"
+                className="flex-1 py-2 text-xs sm:text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
                 variant="outline"
               >
                 {isSubmitting ? 'Starting Assessment...' : 'Begin Dynamic Assessment'}
