@@ -139,7 +139,7 @@ export default function Home() {
       </div>
 
       {/* Comparison Section */}
-      <Card className="mb-20 p-8 border-slate-200 bg-gradient-to-r from-slate-50 to-blue-50">
+      <Card className="mb-20 p-4 sm:p-8 border-slate-200 bg-gradient-to-r from-slate-50 to-blue-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
             <Badge className="bg-blue-100 text-blue-700 border-0">Comparison</Badge>
@@ -279,7 +279,7 @@ export default function Home() {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-12 text-center mb-20">
+      <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-6 sm:p-12 text-center mb-20">
         <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Ready to Assess Your Digital Maturity?</h3>
         <p className="text-blue-100 mb-8 max-w-2xl mx-auto">Get actionable insights in just 30 minutes. Start your comprehensive digital transformation assessment now.</p>
         <Link href="/start?type=adaptive">

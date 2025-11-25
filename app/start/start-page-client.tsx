@@ -70,14 +70,14 @@ export default function StartPageClient() {
 
         <Card className="border-slate-200 shadow-lg">
           {/* Header */}
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-12 rounded-t-lg">
+          <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 sm:px-8 py-8 sm:py-12 rounded-t-lg">
             <Badge className="mb-4 bg-white/20 text-white border-0">Step 1 of 2</Badge>
             <h1 className="text-2xl sm:text-3xl font-bold mb-2">Company Information</h1>
             <p className="text-blue-100">Help us personalize your dynamic digital maturity assessment</p>
           </div>
 
           {/* ASSESSMENT TYPE DISPLAY (Restored original selector styling) */}
-          <div className="bg-slate-50 px-8 py-6 border-b border-slate-200">
+          <div className="bg-slate-50 px-4 sm:px-8 py-6 border-b border-slate-200">
             
             <div className="flex gap-4">
               {/* Only showing the Adaptive option, styled as selected */}
@@ -90,7 +90,7 @@ export default function StartPageClient() {
           </div>
 
           {/* Form */}
-          <form onSubmit={handleSubmit} className="p-8">
+          <form onSubmit={handleSubmit} className="p-4 sm:p-8">
             <div className="space-y-6">
               {/* Company Name */}
               <div>
@@ -195,7 +195,7 @@ export default function StartPageClient() {
           </form>
 
           {/* Info Box */}
-          <div className="bg-slate-50 px-8 py-6 rounded-b-lg border-t border-slate-200">
+          <div className="bg-slate-50 px-4 sm:px-8 py-6 rounded-b-lg border-t border-slate-200">
             <p className="text-sm text-slate-600">
               <span className="font-semibold text-slate-900">Expected time:</span> 10-15 minutes to complete the adaptive assessment.
             </p>
