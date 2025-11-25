@@ -58,7 +58,7 @@ export default function StartPageClient() {
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 py-12 px-4">
-      <div className="mx-auto md:max-w-2xl">
+      <div className="mx-auto">
         {/* Back Button - Using history API fallback */}
         <Button
           variant="ghost"
