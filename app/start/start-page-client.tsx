@@ -188,6 +188,7 @@ export default function StartPageClient() {
                 disabled={!isFormValid || isSubmitting}
                 className="flex-1"
                 size="lg"
+                variant="outline"
               >
                 {isSubmitting ? 'Starting Assessment...' : 'Begin Dynamic Assessment'}
               </Button>
