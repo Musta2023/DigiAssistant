@@ -3,15 +3,15 @@
 import { useState } from 'react'
 import Link from 'next/link'
 // Import the Image component from Next.js
-import Image from 'next/image' 
+import Image from 'next/image'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 
 // 1. Import the specific logo image
-import LogoImage from './projectImages/logoDigiassistant.png'; 
+import LogoImage from './projectImages/logo_digitAssistant.png';
 // 2. Keep the HeroImage import for the background (if it's different)
-import HeroImage from './projectImages/hero.png'; 
+import HeroImage from './projectImages/heroImage.png';
 
 
 export default function Home() {
@@ -84,19 +84,19 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 items-start">
           <div className="flex items-center gap-2">
-            
+
             {/* ⭐️ LOGO INTEGRATION using the dedicated LogoImage ⭐️ */}
             <div className="relative w-10 h-10 flex-shrink-0"> {/* Added flex-shrink-0 to prevent sizing issues */}
-              <Image 
+              <Image
                 src={LogoImage} // Using the new logo asset
-                alt="DigiAssistant Pro Logo" 
-                fill 
+                alt="DigiAssistant Pro Logo"
+                fill
                 sizes="40px" // Optional: Improves performance hint
                 className="rounded-lg object-contain" // Use object-contain to ensure the full logo is visible
               />
             </div>
             {/* ⭐️ END LOGO INTEGRATION ⭐️ */}
-            
+
             <h1 className="font-bold text-xl text-slate-900">DigiAssistant Pro</h1>
           </div>
           <div className="flex items-center gap-4">
@@ -104,7 +104,7 @@ export default function Home() {
             <Link href="/start?type=adaptive">
               <Button size="sm"> Adaptive Assessment</Button>
             </Link>
-            
+
           </div>
         </div>
       </nav>
@@ -112,19 +112,17 @@ export default function Home() {
       {/* Hero Section - Uses HeroImage (the background image) */}
       <div
         className="relative py-20 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${HeroImage.src})` }}
-      >
-        {/* Optional: Add an overlay for better text readability */}
+        style={{ backgroundImage: `url(${HeroImage.src})` }}>
         <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
+
             
-            <Badge className="mb-4 bg-blue-100 text-blue-700 border-0">Enterprise Assessment Platform</Badge>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance">
               Master Your Digital Maturity Journey
             </h2>
-                          <p className="text-lg sm:text-xl text-gray-200 md:max-w-3xl mx-auto mb-8 text-balance">              Experience the next generation of digital diagnostics. Choose between an adaptive conversational assessment or comprehensive traditional evaluation—both delivering actionable insights tailored to your organization.
+            <p className="text-lg sm:text-xl font-bold text-white md:max-w-3xl mx-auto mb-8 text-balance">              Discover digital diagnostics that adapt to you. Our adaptive assessment gives personalized, actionable insights in real time.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/start?type=adaptive">
@@ -141,7 +139,7 @@ export default function Home() {
       <Card className="mb-20 p-4 sm:p-8 border-slate-200 bg-gradient-to-r from-slate-50 to-blue-50">
         <div className="md:max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <Badge className="bg-blue-100 text-blue-700 border-0">Comparison</Badge>
+            <Badge className="bg-blue-100 text-blue-700 border-0"></Badge>
             <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mt-2">Choose your assessment flow</h3>
             <p className="text-slate-600 max-w-2xl mx-auto mt-2">
               Adaptive conversational for a fast personalised experience, or the full assessment for a deep audit.
@@ -160,11 +158,11 @@ export default function Home() {
                   </li>
                   <li className="flex gap-2 items-start">
                     <span className="mt-0.5 text-blue-600">✓</span>
-                    <span>Personalized flow (≈18 smart questions)</span>
+                    <span>Personalized flow (≈72 smart questions)</span>
                   </li>
                   <li className="flex gap-2 items-start">
                     <span className="mt-0.5 text-blue-600">✓</span>
-                    <span>10–15 minute completion</span>
+                    <span>15-30 minute completion</span>
                   </li>
                   <li className="flex gap-2 items-start">
                     <span className="mt-0.5 text-blue-600">✓</span>
@@ -268,7 +266,7 @@ export default function Home() {
         <div className="grid md:grid-cols-4 gap-4">
           {profiles.map((profile, idx) => (
             <Card key={profile.name} className="p-6 border-slate-200 text-center hover:shadow-md transition-all">
-              <div className="text-4xl sm:text-5xl mb-4">👑</div>
+              <div className="text-4xl sm:text-5xl mb-4">{profile.icon}</div>
               <h4 className="font-bold text-slate-900 text-lg">{profile.name}</h4>
               <div className="text-sm text-blue-600 font-semibold my-2">{profile.range}</div>
               <p className="text-sm text-slate-600">{profile.description}</p>
@@ -279,31 +277,40 @@ export default function Home() {
 
       {/* CTA Section */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-6 sm:p-12 text-center mb-20">
-        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Ready to Assess Your Digital Maturity?</h3>
-        <p className="text-blue-100 mb-8 md:max-w-2xl mx-auto">Get actionable insights in just 30 minutes. Start your comprehensive digital transformation assessment now.</p>
+        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+          Ready to Assess Your Digital Maturity?
+        </h3>
+        <p className="text-blue-100 mb-8 md:max-w-2xl mx-auto">
+          Get actionable insights in just 30 minutes. Start your comprehensive digital transformation assessment now.
+        </p>
         <Link href="/start?type=adaptive">
-          <Button size="lg" className="px-8 py-3 bg-blue-600 hover:bg-blue-700 mb-4">
+          <Button
+            size="lg"
+            className="px-8 py-3 bg-blue-800 hover:bg-blue-900 transition-colors duration-300"
+          >
             Start Adaptive Assessment
           </Button>
         </Link>
-
       </div>
+
 
       {/* Stats */}
-      <div className="grid md:grid-cols-3 gap-8 text-center">
-        <div>
-          <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">72</div>
-          <p className="text-slate-600">Criteria across all dimensions</p>
-        </div>
-        <div>
-          <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">30min</div>
-          <p className="text-slate-600">Complete assessment time</p>
-        </div>
-        <div>
-          <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">4</div>
-          <p className="text-slate-600">Maturity levels evaluated</p>
-        </div>
+      <div className="grid md:grid-cols-3 gap-6 text-center py-4 bg-slate-50">
+        {[
+          { value: "72", label: "Criteria across all dimensions" },
+          { value: "30min", label: "Complete assessment time" },
+          { value: "4", label: "Maturity levels evaluated" },
+        ].map((item, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-1">
+              {item.value}
+            </div>
+            <p className="text-slate-600 text-sm sm:text-base">{item.label}</p>
+          </div>
+        ))}
       </div>
+
+
     </main>
   )
 }
