@@ -110,9 +110,10 @@ export default function Home() {
       </nav>
 
       {/* Hero Section - Uses HeroImage (the background image) */}
-      <div
-        className="relative py-20 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${HeroImage.src})` }}>
+            <div
+              className="relative py-20 bg-cover bg-center bg-no-repeat rounded-xl overflow-hidden"
+              style={{ backgroundImage: `url(${HeroImage.src})` }}
+            >
         <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
