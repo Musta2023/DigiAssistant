@@ -120,7 +120,7 @@ const assessmentDate = new Date(now).toLocaleDateString('en-US', {
         all: "unset",
         display: "block",
         boxSizing: "border-box",
-        width: "794px",
+        width: "100%",
         maxWidth: "100%",
         padding: "0",
         fontFamily: '"Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif',
@@ -131,7 +131,7 @@ const assessmentDate = new Date(now).toLocaleDateString('en-US', {
       }}
     >
       {/* PAGE 1: Cover & Executive Summary */}
-      <div style={{ pageBreakAfter: "always", padding: "48px 56px", minHeight: "1050px", maxHeight: "1050px" }}>
+      <div style={{ padding: "48px 56px" }}>
         {/* Premium Header Bar */}
         <div
           style={{
@@ -240,7 +240,7 @@ const assessmentDate = new Date(now).toLocaleDateString('en-US', {
         >
           <div
             style={{
-              fontSize: "72px",
+              fontSize: "48px",
               fontWeight: "900",
               color: "#ffffff",
               marginBottom: "12px",
@@ -249,7 +249,7 @@ const assessmentDate = new Date(now).toLocaleDateString('en-US', {
             }}
           >
             {data.globalScore}
-            <span style={{ fontSize: "48px", opacity: 0.9 }}>%</span>
+            <span style={{ fontSize: "32px", opacity: 0.9 }}>%</span>
           </div>
           <div
             style={{
@@ -278,7 +278,7 @@ const assessmentDate = new Date(now).toLocaleDateString('en-US', {
         <div>
           <h2
             style={{
-              fontSize: "22px",
+              fontSize: "18px",
               fontWeight: "800",
               marginBottom: "20px",
               color: "#0f172a",
@@ -373,7 +373,7 @@ const assessmentDate = new Date(now).toLocaleDateString('en-US', {
       </div>
 
       {/* PAGE 2: Dimension Scores */}
-      <div style={{ pageBreakAfter: "always", padding: "48px 56px", minHeight: "1050px", maxHeight: "1050px" }}>
+      <div style={{ padding: "48px 56px" }}>
         <h2
           style={{
             fontSize: "22px",
@@ -558,7 +558,7 @@ const assessmentDate = new Date(now).toLocaleDateString('en-US', {
       </div>
 
       {/* PAGE 3: Maturity Tiers & Gaps Table */}
-      <div style={{ pageBreakAfter: "always", padding: "48px 56px", minHeight: "1050px", maxHeight: "1050px" }}>
+      <div style={{ padding: "48px 56px" }}>
         <h2
           style={{
             fontSize: "22px",
@@ -577,7 +577,7 @@ const assessmentDate = new Date(now).toLocaleDateString('en-US', {
           priority assignment based on gap analysis.
         </p>
 
-        <div style={{ overflowX: "auto" }}>
+        <div style={{ overflowX: "auto", "-webkit-overflow-scrolling": "touch" }}>
           <table
             style={{
               width: "100%",
@@ -772,7 +772,7 @@ const assessmentDate = new Date(now).toLocaleDateString('en-US', {
       </div>
 
       {/* PAGE 4: Detailed Dimension Analysis */}
-      <div style={{ pageBreakAfter: "always", padding: "48px 56px", minHeight: "1050px", maxHeight: "1050px" }}>
+      <div style={{ padding: "48px 56px" }}>
         <h2
           style={{
             fontSize: "22px",
@@ -833,7 +833,7 @@ const assessmentDate = new Date(now).toLocaleDateString('en-US', {
       </div>
 
       {/* PAGE 5: Action Plan */}
-      <div style={{ pageBreakAfter: "always", padding: "48px 56px", minHeight: "1050px", maxHeight: "1050px" }}>
+      <div style={{ padding: "48px 56px" }}>
         <h2
           style={{
             fontSize: "22px",
