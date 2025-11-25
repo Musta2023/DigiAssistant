@@ -238,7 +238,7 @@ export default function ConversationPage() {
           <div className="flex items-center justify-between mb-6">
             <div>
               <Badge className="mb-2 bg-blue-100 text-blue-700 border-0">Adaptive Assessment</Badge>
-              <h1 className="text-3xl font-bold text-slate-900">Digital Maturity Diagnostic</h1>
+              <h1 className="text-2xl sm:text-3xl font-bold text-slate-900">Digital Maturity Diagnostic</h1>
               <p className="text-slate-600 mt-2">{dimensionLabel?.name}</p>
             </div>
             <div className="text-right">
@@ -258,7 +258,7 @@ export default function ConversationPage() {
 
         {/* Main Question */}
         <Card className="mb-8 p-8 border-slate-200">
-          <h2 className="text-2xl font-bold text-slate-900 mb-8">{currentQuestion.text}</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-8">{currentQuestion.text}</h2>
           <div className="space-y-4">
             {renderAnswerOptions()}
           </div>

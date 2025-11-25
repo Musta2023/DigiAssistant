@@ -57,7 +57,7 @@ export default function StartPageClient() {
   const isFormValid = formData.company_name && formData.industry && formData.size && formData.location
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 py-12">
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 py-12 px-4">
       <div className="max-w-2xl mx-auto px-4">
         {/* Back Button - Using history API fallback */}
         <Button
@@ -72,7 +72,7 @@ export default function StartPageClient() {
           {/* Header */}
           <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-12 rounded-t-lg">
             <Badge className="mb-4 bg-white/20 text-white border-0">Step 1 of 2</Badge>
-            <h1 className="text-3xl font-bold mb-2">Company Information</h1>
+            <h1 className="text-2xl sm:text-3xl font-bold mb-2">Company Information</h1>
             <p className="text-blue-100">Help us personalize your dynamic digital maturity assessment</p>
           </div>
 
@@ -103,7 +103,7 @@ export default function StartPageClient() {
                   onChange={handleChange}
                   required
                   placeholder="e.g., Acme Digital Solutions"
-                  className="h-12 text-lg border-slate-300"
+                  className="h-auto text-base sm:text-lg py-3 px-4 border-slate-300"
                 />
               </div>
 
@@ -116,7 +116,7 @@ export default function StartPageClient() {
                   value={formData.industry}
                   onChange={handleChange}
                   required
-                  className="w-full h-12 px-4 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent text-slate-900"
+                  className="w-full text-base sm:text-lg px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent text-slate-900"
                 >
                   <option value="">Select your industry...</option>
                   <option value="finance">Finance & Banking</option>
@@ -141,7 +141,7 @@ export default function StartPageClient() {
                   value={formData.size}
                   onChange={handleChange}
                   required
-                  className="w-full h-12 px-4 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent text-slate-900"
+                  className="w-full text-base sm:text-lg px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent text-slate-900"
                 >
                   <option value="">Select company size...</option>
                   <option value="startup">Startup (1-50 employees)</option>
@@ -160,7 +160,7 @@ export default function StartPageClient() {
                   value={formData.location}
                   onChange={handleChange}
                   required
-                  className="w-full h-12 px-4 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent text-slate-900"
+                  className="w-full text-base sm:text-lg px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent text-slate-900"
                 >
                   <option value="">Select location...</option>
                   <option value="north_america">North America</option>

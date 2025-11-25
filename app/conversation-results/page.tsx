@@ -224,7 +224,7 @@ export default function ConversationResultsPage() {
           <Link href="/" className="inline-block mb-6">
             <Button variant="outline">← Back to Home</Button>
           </Link>
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">Your Personalized Assessment Results</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-2">Your Personalized Assessment Results</h1>
           <p className="text-slate-600">
             {companyData?.company_name} • Completed in {results.timeToComplete}
           </p>
@@ -236,13 +236,13 @@ export default function ConversationResultsPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <Badge className="mb-4 bg-white/20 text-white border-0">Your Digital Maturity Profile</Badge>
-                <div className="text-7xl font-bold mb-4">{results.globalScore}%</div>
-                <p className="text-4xl font-bold mb-6">{results.profile}</p>
+                <div className="text-5xl sm:text-7xl font-bold mb-4">{results.globalScore}%</div>
+                <p className="text-3xl sm:text-4xl font-bold mb-6">{results.profile}</p>
                 <p className="text-white/90 text-lg leading-relaxed">{results.profileDescription}</p>
               </div>
               <div className="flex justify-center">
-                <div className="relative w-80 h-80">
-                  <ResponsiveContainer width={300} height={300}>
+                <div className="relative w-full h-auto" style={{ minHeight: '300px' }}>
+                  <ResponsiveContainer width="100%" height="100%">
                     <RadarChart data={radarData}>
                       <PolarGrid stroke="#ffffff" strokeOpacity={0.3} />
                       <PolarAngleAxis dataKey="name" stroke="#ffffff" />
@@ -261,22 +261,24 @@ export default function ConversationResultsPage() {
           {/* Chart */}
           <Card className="p-6 border-slate-200">
             <h2 className="text-xl font-bold text-slate-900 mb-6">Dimension Performance</h2>
-            <ResponsiveContainer width="100%" height={300}>
-              <BarChart data={results.dimensionScores}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
-                <XAxis dataKey="icon" />
-                <YAxis domain={[0, 100]} />
-                <Tooltip
-                  contentStyle={{
-                    backgroundColor: "#1e293b",
-                    border: "1px solid #475569",
-                  }}
-                  labelStyle={{ color: "#ffffff" }}
-                  formatter={(value: any) => [`${value}%`, "Score"]}
-                />
-                <Bar dataKey="score" fill="#2563eb" radius={[8, 8, 0, 0]} />
-              </BarChart>
-            </ResponsiveContainer>
+            <div className="w-full h-auto" style={{ minHeight: '300px' }}>
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={results.dimensionScores}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                  <XAxis dataKey="icon" />
+                  <YAxis domain={[0, 100]} />
+                  <Tooltip
+                    contentStyle={{
+                      backgroundColor: "#1e293b",
+                      border: "1px solid #475569",
+                    }}
+                    labelStyle={{ color: "#ffffff" }}
+                    formatter={(value: any) => [`${value}%`, "Score"]}
+                  />
+                  <Bar dataKey="score" fill="#2563eb" radius={[8, 8, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
           </Card>
 
           {/* Scores Breakdown */}
@@ -289,7 +291,7 @@ export default function ConversationResultsPage() {
                     <span className="text-2xl">{dim.icon}</span>
                     <h3 className="font-semibold text-slate-900">{dim.name}</h3>
                   </div>
-                  <span className="text-2xl font-bold text-blue-600">{dim.score}%</span>
+                  <span className="text-xl sm:text-2xl font-bold text-blue-600">{dim.score}%</span>
                 </div>
                 <div className="w-full bg-slate-200 rounded-full h-2">
                   <div

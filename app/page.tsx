@@ -121,10 +121,10 @@ export default function Home() {
           <div className="text-center mb-16">
             
             <Badge className="mb-4 bg-blue-100 text-blue-700 border-0">Enterprise Assessment Platform</Badge>
-            <h2 className="text-5xl sm:text-6xl font-bold text-white mb-6 text-balance">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance">
               Master Your Digital Maturity Journey
             </h2>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8 text-balance">
+            <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto mb-8 text-balance">
               Experience the next generation of digital diagnostics. Choose between an adaptive conversational assessment or comprehensive traditional evaluation—both delivering actionable insights tailored to your organization.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -143,7 +143,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
             <Badge className="bg-blue-100 text-blue-700 border-0">Comparison</Badge>
-            <h3 className="text-2xl font-bold text-slate-900 mt-4">Choose your assessment flow</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mt-2">Choose your assessment flow</h3>
             <p className="text-slate-600 max-w-2xl mx-auto mt-2">
               Adaptive conversational for a fast personalised experience, or the full assessment for a deep audit.
             </p>
@@ -244,7 +244,7 @@ export default function Home() {
       {/* Dimensions Section */}
       <div className="mb-20">
         <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold text-slate-900 mb-4">6 Assessment Dimensions</h3>
+          <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">6 Assessment Dimensions</h3>
           <p className="text-slate-600 max-w-2xl mx-auto">Comprehensive evaluation framework covering all critical areas of digital transformation</p>
         </div>
         <div className="grid md:grid-cols-3 gap-4">
@@ -263,7 +263,7 @@ export default function Home() {
       {/* Maturity Profiles */}
       <div className="mb-20">
         <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold text-slate-900 mb-4">Your Digital Maturity Profile</h3>
+          <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">Your Digital Maturity Profile</h3>
           <p className="text-slate-600 max-w-2xl mx-auto">Automated profile determination based on comprehensive scoring</p>
         </div>
         <div className="grid md:grid-cols-4 gap-4">
@@ -280,7 +280,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-12 text-center mb-20">
-        <h3 className="text-3xl font-bold text-white mb-4">Ready to Assess Your Digital Maturity?</h3>
+        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Ready to Assess Your Digital Maturity?</h3>
         <p className="text-blue-100 mb-8 max-w-2xl mx-auto">Get actionable insights in just 30 minutes. Start your comprehensive digital transformation assessment now.</p>
         <Link href="/start?type=adaptive">
           <Button size="lg" className="px-8 py-3 bg-blue-600 hover:bg-blue-700 mb-4">
@@ -293,15 +293,15 @@ export default function Home() {
       {/* Stats */}
       <div className="grid md:grid-cols-3 gap-8 text-center">
         <div>
-          <div className="text-4xl font-bold text-blue-600 mb-2">72</div>
+          <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">72</div>
           <p className="text-slate-600">Criteria across all dimensions</p>
         </div>
         <div>
-          <div className="text-4xl font-bold text-blue-600 mb-2">30min</div>
+          <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">30min</div>
           <p className="text-slate-600">Complete assessment time</p>
         </div>
         <div>
-          <div className="text-4xl font-bold text-blue-600 mb-2">4</div>
+          <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">4</div>
           <p className="text-slate-600">Maturity levels evaluated</p>
         </div>
       </div>
