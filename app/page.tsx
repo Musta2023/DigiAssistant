@@ -124,8 +124,7 @@ export default function Home() {
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance">
               Master Your Digital Maturity Journey
             </h2>
-            <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto mb-8 text-balance">
-              Experience the next generation of digital diagnostics. Choose between an adaptive conversational assessment or comprehensive traditional evaluation—both delivering actionable insights tailored to your organization.
+                          <p className="text-lg sm:text-xl text-gray-200 md:max-w-3xl mx-auto mb-8 text-balance">              Experience the next generation of digital diagnostics. Choose between an adaptive conversational assessment or comprehensive traditional evaluation—both delivering actionable insights tailored to your organization.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/start?type=adaptive">
@@ -140,7 +139,7 @@ export default function Home() {
 
       {/* Comparison Section */}
       <Card className="mb-20 p-4 sm:p-8 border-slate-200 bg-gradient-to-r from-slate-50 to-blue-50">
-        <div className="max-w-4xl mx-auto">
+        <div className="md:max-w-4xl mx-auto">
           <div className="text-center mb-8">
             <Badge className="bg-blue-100 text-blue-700 border-0">Comparison</Badge>
             <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mt-2">Choose your assessment flow</h3>
@@ -245,7 +244,7 @@ export default function Home() {
       <div className="mb-20">
         <div className="text-center mb-12">
           <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">6 Assessment Dimensions</h3>
-          <p className="text-slate-600 max-w-2xl mx-auto">Comprehensive evaluation framework covering all critical areas of digital transformation</p>
+          <p className="text-slate-600 md:max-w-2xl mx-auto">Comprehensive evaluation framework covering all critical areas of digital transformation</p>
         </div>
         <div className="grid md:grid-cols-3 gap-4">
           {dimensions.map((dim) => (
@@ -264,7 +263,7 @@ export default function Home() {
       <div className="mb-20">
         <div className="text-center mb-12">
           <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">Your Digital Maturity Profile</h3>
-          <p className="text-slate-600 max-w-2xl mx-auto">Automated profile determination based on comprehensive scoring</p>
+          <p className="text-slate-600 md:max-w-2xl mx-auto">Automated profile determination based on comprehensive scoring</p>
         </div>
         <div className="grid md:grid-cols-4 gap-4">
           {profiles.map((profile, idx) => (
@@ -281,7 +280,7 @@ export default function Home() {
       {/* CTA Section */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-6 sm:p-12 text-center mb-20">
         <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Ready to Assess Your Digital Maturity?</h3>
-        <p className="text-blue-100 mb-8 max-w-2xl mx-auto">Get actionable insights in just 30 minutes. Start your comprehensive digital transformation assessment now.</p>
+        <p className="text-blue-100 mb-8 md:max-w-2xl mx-auto">Get actionable insights in just 30 minutes. Start your comprehensive digital transformation assessment now.</p>
         <Link href="/start?type=adaptive">
           <Button size="lg" className="px-8 py-3 bg-blue-600 hover:bg-blue-700 mb-4">
             Start Adaptive Assessment
