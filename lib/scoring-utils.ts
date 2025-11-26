@@ -23,13 +23,14 @@ export interface Results {
   profile: Profile
   profileLevel: 1 | 2 | 3 | 4
   dimensions: DimensionScore[]
+  criticalGaps: GapInfo[] 
 }
 
 export interface GapInfo {
   id: string
   name: string
-  palierAtteint: number
-  palierCible: number
+  palierAtteint: 1 | 2 | 3 | 4
+  palierCible: 1 | 2 | 3 | 4
   gap: number
   priority: "High" | "Medium" | "Low"
 }
@@ -185,10 +186,10 @@ export function computeGlobalScore(dimensions: DimensionScore[]): number {
   return Math.round(avg)
 }
 
-export function computeGaps(dimensions: DimensionScore[], profileLevel: 1 | 2 | 3 | 4): GapInfo[] {
+export function computeGaps(dimensions: DimensionScore[], profileLevel: number): GapInfo[] {
   return dimensions.map((dim) => {
     const palierAtteint = dim.palierAtteint
-    const palierCible = profileLevel
+    const palierCible = 4
     const gap = getGap(palierAtteint, palierCible)
     const priority = getGapPriority(gap)
     return {

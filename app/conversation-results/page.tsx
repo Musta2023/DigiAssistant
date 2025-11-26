@@ -110,14 +110,14 @@ export default function ConversationResultsPage() {
     )
 
     const profile = getProfileFromGlobalScore(globalScore)
-    const targetTier = getProfileTier(profile)
+    const targetTier = 4
 
     const dimensionPercentages: DimensionPercentageInput[] = baseDimensionScores.map((d) => ({
       id: d.id,
       name: d.name,
       percentage: d.score,
     }))
-
+    
     const gapInfos: TierGapInfo[] = computeGapsFromPercentages(dimensionPercentages, targetTier)
 
     const gapMap = new Map<string, TierGapInfo>(gapInfos.map((g) => [g.id, g]))
@@ -165,7 +165,7 @@ export default function ConversationResultsPage() {
     const gapDimensions = dimensionScores.filter((d) => d.gap > 0).sort((a, b) => b.gap - a.gap || a.score - b.score)
 
     const keyStrengths = strengthDimensions.map((d) => d.name)
-    const criticalGaps = gapDimensions.map((d) => d.name)
+    const criticalGaps = gapDimensions.slice(0,3).map((d) => d.name)
 
     const quickWins: string[] = []
     const strategicInitiatives: string[] = []
