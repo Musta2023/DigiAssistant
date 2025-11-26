@@ -577,7 +577,8 @@ const assessmentDate = new Date(now).toLocaleDateString('en-US', {
           priority assignment based on gap analysis.
         </p>
 
-        <div style={{ overflowX: "auto", "-webkit-overflow-scrolling": "touch" }}>
+        <div style={{ overflowX: "auto", "WebkitOverflowScrolling": "touch" }}>
+          
           <table
             style={{
               width: "100%",
