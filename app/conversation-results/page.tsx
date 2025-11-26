@@ -38,6 +38,7 @@ import {
   describeConversationProfile,
 } from "@/lib/scoring-utils"
 
+
 interface EnrichedDimensionScore {
   [key: string]: unknown
   id: string
@@ -90,6 +91,8 @@ export default function ConversationResultsPage() {
     const parsedAnswers = JSON.parse(answers)
     const parsedCompany = company ? JSON.parse(company) : null
     const parsedState = state ? JSON.parse(state) : null
+
+    
 
     setCompanyData(parsedCompany)
 

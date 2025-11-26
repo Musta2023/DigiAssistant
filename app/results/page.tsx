@@ -38,7 +38,7 @@ interface DimensionScoreUI extends CoreDimensionScore {
   score: number // equals rawScore
 }
 
-interface Results {
+export interface Results {
   globalScore: number
   profile: Profile
   profileLevel: 1 | 2 | 3 | 4
@@ -100,7 +100,7 @@ export default function ResultsPage() {
 
       uiDimensions.push({
         ...coreDim,
-        score: coreDim.rawScore, // alias for existing UI
+        score: coreDim.rawScore, // alias for exissting UI
       })
     })
 
