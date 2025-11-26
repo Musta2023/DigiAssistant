@@ -1,5 +1,5 @@
 # DigiAssistant Pro
-DigiAssistant Pro is an enterprise-grade platform designed to help organizations evaluate and optimize their digital maturity across key dimensions. It offers two distinct assessment flows: a dynamic, conversational assessment for a fast and personalized experience, and a comprehensive traditional evaluation for a deep audit.
+DigiAssistant is a web application designed to evaluate and strengthen an organization’s digital assessment maturity in a dynamic and evolving way. It provides an interactive framework that helps institutions understand their current digital capabilities, identify areas for improvement, and track progress over time. Through data-driven insights and user-friendly dashboards, DigiAssistant supports continuous transformation and helps organizations make strategic decisions to enhance their digital performance.
 
 ## Key Features
 

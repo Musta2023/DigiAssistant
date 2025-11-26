@@ -43,7 +43,7 @@
 1.  **Run the backend server:**
     ```bash
     cd backend
-    uvicorn main:app --reload
+    uvicorn main:app --reload --host 0.0.0.0 --port 8000
     ```
 
 2.  **Run the frontend development server:**
