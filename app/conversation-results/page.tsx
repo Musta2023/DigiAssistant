@@ -407,12 +407,13 @@ export default function ConversationResultsPage() {
             aria-hidden="true"
             style={{
               position: "absolute",
-              left: "-9999px",
               top: 0,
+              left: 0,
               width: "800px",
               maxWidth: "100%",
-              overflow: "visible",
+              opacity: 0,
               pointerEvents: "none",
+              zIndex: -1,
             }}
           >
             <ConversationPDFContent
