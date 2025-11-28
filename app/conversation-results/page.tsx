@@ -39,7 +39,7 @@ import {
 } from "@/lib/scoring-utils"
 
 
-interface EnrichedDimensionScore {
+export interface EnrichedDimensionScore {
   [key: string]: unknown
   id: string
   name: string
@@ -52,7 +52,7 @@ interface EnrichedDimensionScore {
   status: "Above target" | "On target" | "Below target"
 }
 
-interface PersonalizedResults {
+export interface PersonalizedResults {
   globalScore: number
   profile: ConversationProfile
   profileColor: string
@@ -77,8 +77,10 @@ export default function ConversationResultsPage() {
   const [results, setResults] = useState<PersonalizedResults | null>(null)
   const [companyData, setCompanyData] = useState<any>(null)
   const [loading, setLoading] = useState(true)
+  const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
+    setIsClient(true)
     const answers = localStorage.getItem("conversationAnswers")
     const company = localStorage.getItem("assessmentData")
     const state = localStorage.getItem("conversationState")
@@ -91,8 +93,6 @@ export default function ConversationResultsPage() {
     const parsedAnswers = JSON.parse(answers)
     const parsedCompany = company ? JSON.parse(company) : null
     const parsedState = state ? JSON.parse(state) : null
-
-    
 
     setCompanyData(parsedCompany)
 
@@ -196,7 +196,7 @@ export default function ConversationResultsPage() {
     setLoading(false)
   }, [router])
 
-  if (loading || !results) {
+  if (loading || !results || !isClient) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-white to-blue-50">
         <div className="text-center">
@@ -211,13 +211,15 @@ export default function ConversationResultsPage() {
     name: d.icon,
     score: d.score,
     fullName: d.name,
-  }))
+  }));
 
+  // These are now safe because they only run on the client after the loading state
   const timestamp = new Date().toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
   })
+  const currentYear = new Date().getFullYear();
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 py-12">
@@ -316,7 +318,7 @@ export default function ConversationResultsPage() {
           <Card className="p-6 border-green-200 bg-green-50">
             <h3 className="font-bold text-slate-900 mb-4">Your Strengths</h3>
             <ul className="space-y-3">
-              {results.keyStrengths.length > 0 ? (
+              {results && results.keyStrengths.length > 0 ? (
                 results.keyStrengths.map((strength, i) => (
                   <li key={i} className="flex gap-3">
                     <span className="text-green-600 font-bold">✓</span>
@@ -333,7 +335,7 @@ export default function ConversationResultsPage() {
           <Card className="p-6 border-amber-200 bg-amber-50">
             <h3 className="font-bold text-slate-900 mb-4">Priority Focus Areas</h3>
             <ul className="space-y-3">
-              {results.criticalGaps.length > 0 ? (
+              {results && results.criticalGaps.length > 0 ? (
                 results.criticalGaps.map((gap, i) => (
                   <li key={i} className="flex gap-3">
                     <span className="text-amber-600 font-bold">!</span>
@@ -388,7 +390,7 @@ export default function ConversationResultsPage() {
                 industry: companyData?.industry,
                 size: companyData?.size,
                 timestamp,
-               
+                currentYear,
               }}
             />
           )}
@@ -420,6 +422,7 @@ export default function ConversationResultsPage() {
                 industry: companyData?.industry,
                 size: companyData?.size,
                 timestamp,
+                currentYear,
                 
               }}
              

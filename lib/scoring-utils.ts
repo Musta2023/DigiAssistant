@@ -12,13 +12,14 @@ export interface PalierScores {
 export interface DimensionScore {
   id: string
   name: string
+  gapInfo:string
   palierScores: PalierScores
   rawScore: number // 0–36
   percentage: number // 0–100 (rounded)
   palierAtteint: 1 | 2 | 3 | 4
 }
 
-export interface Results {
+export interface AssessmentResults {
   globalScore: number
   profile: Profile
   profileLevel: 1 | 2 | 3 | 4
@@ -177,6 +178,7 @@ export function computeDimensionFromPaliers(id: string, name: string, palierScor
     rawScore,
     percentage,
     palierAtteint,
+    gapInfo:"",
   }
 }
 

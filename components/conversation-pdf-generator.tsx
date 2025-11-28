@@ -39,14 +39,9 @@ export function ConversationPDFGenerator({ data }: ConversationPDFGeneratorProps
     try {
       setLoading(true)
 
-      const element = document.getElementById("conversation-pdf-content")
-      if (!element) {
-        console.error('Conversation PDF content element with id "conversation-pdf-content" was not found in the DOM.')
-        return
-      }
-
       const filename = `DigiMaturity_${formatCompanyName(data.company_name)}_Conversation_Assessment.pdf`
-      await downloadPDF(element, filename)
+      // Pass the ID of the element instead of the element object itself.
+      await downloadPDF("conversation-pdf-content", filename)
     } catch (error) {
       console.error("Error while generating the conversation PDF report:", error)
     } finally {
