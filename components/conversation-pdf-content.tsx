@@ -266,9 +266,7 @@ const KeyInitiativesPage = ({ data }: { data: ConversationPDFData }) => {
   );
 };
 
-// MAIN COMPONENT with FIXED PAGE STRUCTURE
-// MAIN COMPONENT with FIXED PAGE STRUCTURE
-// MAIN COMPONENT with FIXED PAGE STRUCTURE
+
 export function ConversationPDFContent({ data }: { data: ConversationPDFData }) {
   const targetTier = getProfileTier(data.profile)
   const enrichedDimensions = data.dimensionScores.map((dim) => ({ ...dim, percentage: dim.score }));
